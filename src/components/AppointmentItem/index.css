@@ -1,0 +1,47 @@
+.appointment-card {
+  list-style-type: none;
+  border: 1px solid #b5b7c4;
+  padding: 15px;
+  border-radius: 10px;
+  margin-right: 15px;
+  margin-bottom: 18px;
+}
+
+.appointment-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.appointment-para {
+  color: #171f46;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.appointment-btn {
+  width: 20%;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.appointment-star {
+  width: 95%;
+}
+
+.appointment-time {
+  color: #b5b7c4;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .appointment-card {
+    width: 90%;
+  }
+
+  .appointment-star {
+    width: 60%;
+  }
+}

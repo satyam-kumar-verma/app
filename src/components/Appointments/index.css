@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  font-family: roboto;
+  box-sizing: border-box;
+}
+
+.bg-container {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, #fbc7d4, #9796f0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card-container {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.add-appointment-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.appointment-section {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.heading {
+  color: #171f46;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.label {
+  color: #b5b7c4;
+  font-size: 20px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.title-input {
+  outline: none;
+  width: 90%;
+  padding: 7px;
+  font-size: 20px;
+  border: 1px solid #171f46;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.date-input {
+  outline: none;
+  width: 90%;
+  padding: 7px;
+  font-size: 20px;
+  border: 1px solid #171f46;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  width: 18%;
+  background-color: #8b5cf6;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.img {
+  width: 45%;
+  align-self: stretch;
+}
+
+.hr {
+  margin-bottom: 25px;
+}
+
+.appointment-list-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 15px;
+}
+
+.appointment-detail {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.star-btn {
+  width: 12%;
+  background-color: white;
+  color: #9897f0;
+  border: 1px solid #9897f0;
+  padding: 9px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.appointment-container {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.clicked-star-bg {
+  background-color: #9897f0;
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .add-appointment-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .appointment-section {
+    width: 100%;
+  }
+
+  .img {
+    display: none;
+  }
+
+  .appointment-detail {
+    align-items: center;
+  }
+
+  .star-btn {
+    width: 16%;
+  }
+
+  .appointment-container {
+    justify-content: center;
+    align-items: center;
+  }
+}
